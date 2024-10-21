@@ -43,7 +43,7 @@ SET default_tablespace = '';
 
 SET default_table_access_method = heap;
 
-SOME MORE CHANGES
+SOME MORE CHANGES 2
 --
 -- Name: galaxy; Type: TABLE; Schema: public; Owner: freecodecamp
 --

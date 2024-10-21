@@ -67,3 +67,4 @@ __vsc_prompt_cmd_original
 __vsc_prompt_cmd_original
 __vsc_prompt_cmd_original
 pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+gh repo clone KevinBOT64/learn-celestial-bodies-database

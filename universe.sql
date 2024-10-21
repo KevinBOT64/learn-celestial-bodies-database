@@ -48,6 +48,7 @@ SET default_table_access_method = heap;
 --
 
 CREATE TABLE public.galaxy (
+    name character varying(30) NOT NULL
 );
 
 
@@ -58,6 +59,7 @@ ALTER TABLE public.galaxy OWNER TO freecodecamp;
 --
 
 CREATE TABLE public.moon (
+    name character varying(30) NOT NULL
 );
 
 
@@ -68,6 +70,7 @@ ALTER TABLE public.moon OWNER TO freecodecamp;
 --
 
 CREATE TABLE public.planet (
+    name character varying(30) NOT NULL
 );
 
 
@@ -78,6 +81,7 @@ ALTER TABLE public.planet OWNER TO freecodecamp;
 --
 
 CREATE TABLE public.star (
+    name character varying(30) NOT NULL
 );
 
 
@@ -105,6 +109,38 @@ ALTER TABLE public.star OWNER TO freecodecamp;
 -- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+
+
+--
+-- Name: galaxy galaxy_name_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.galaxy
+    ADD CONSTRAINT galaxy_name_key UNIQUE (name);
+
+
+--
+-- Name: moon moon_name_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.moon
+    ADD CONSTRAINT moon_name_key UNIQUE (name);
+
+
+--
+-- Name: planet planet_name_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.planet
+    ADD CONSTRAINT planet_name_key UNIQUE (name);
+
+
+--
+-- Name: star star_name_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.star
+    ADD CONSTRAINT star_name_key UNIQUE (name);
 
 
 --
